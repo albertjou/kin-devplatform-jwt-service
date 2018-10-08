@@ -12,13 +12,10 @@
 		"es256_0": {
 			"algorithm": "ES256",
 			"file": "keys/test-es256_0-priv.pem"
-		},
-		"rs512_0":{
-			"algorithm": "RS512",
-			"file": "keys/test-rs512_0-priv.pem"
 		}
 	},
 	"public_keys": {
+		"es256_0": "keys/test-es256_0.pem",
 		"es256_1c008f56-d08c-441f-aa67-d56da6a9488c": "keys/playground_public/es256_1c008f56-d08c-441f-aa67-d56da6a9488c.pem",
 		"es256_2d39d39d-4a0e-4221-9a59-3f945ae9f48e": "keys/playground_public/es256_2d39d39d-4a0e-4221-9a59-3f945ae9f48e.pem",
 		"es256_31bd9616-17b1-40d3-8e50-3f6ff29fed01": "keys/playground_public/es256_31bd9616-17b1-40d3-8e50-3f6ff29fed01.pem",

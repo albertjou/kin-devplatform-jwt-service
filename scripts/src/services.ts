@@ -191,7 +191,7 @@ export const validateJWT = async function(req: ValidateRequest, res: Response) {
 	try {
 		const publicKey = await getPublicKey(decoded.header.kid);
 		jsonwebtoken.verify(req.query.jwt, publicKey); // throws
-		res.status(200).json({ is_valid: true });
+		res.status(200).json({ is_valid: true, decoded: decoded.payload });
 	} catch (e) {
 		res.status(200).json({ is_valid: false, error: e });
 	}
